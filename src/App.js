@@ -2,7 +2,11 @@ import React from 'react'
 
 const App = () => {
   return (
-    <div> Hello reactjs  adding navbar</div>
+    <> 
+    <h1> Hello in reactjs </h1>
+    <h1> Hello in reactjs </h1>
+    <h1> Hello in reactjs </h1>
+    </>
   )
 }
 
