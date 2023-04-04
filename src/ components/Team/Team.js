@@ -1,6 +1,8 @@
 import React from "react";
 import "./Team.css";
-import { BsFacebook, BsInstagram, BsLinkedin } from "react-icons/bs";
+import { BsFacebook, BsInstagram,  } from "react-icons/bs";
+import { FaLinkedinIn} from "react-icons/fa";
+
 
 const Team = () => {
   const data = [
@@ -49,7 +51,7 @@ const Team = () => {
   ];
 
   return (
-    <div className="container team-membres">
+    <div id='team'className="container team-membres">
       <div className="section_title">
         <h5>Team Membres</h5>
         <span className="line"></span>
@@ -72,7 +74,7 @@ const Team = () => {
                   <BsInstagram size={30} />
                 </p>
                 <p>
-                  <BsLinkedin size={30} />
+                  <FaLinkedinIn size={30} />
                 </p>
               </div>
             </div>

@@ -96,7 +96,6 @@ const Navbar = () => {
         </li>
 
         <li className="nav-item">
-          {" "}
           <Link
             to="feedback"
             spy={true}
@@ -104,7 +103,7 @@ const Navbar = () => {
             offset={100}
             duration={100}
           >
-            Feedback{" "}
+            Feedback
           </Link>
         </li>
 
@@ -116,7 +115,7 @@ const Navbar = () => {
             offset={100}
             duration={100}
           >
-            Contact{" "}
+            Contact
           </Link>
         </li>
 

@@ -1,5 +1,5 @@
 .team-membres {
-  height: 1000px;
+  height: 1200px;
 }
 .team-members-item img {
   height: 240px;
@@ -33,7 +33,6 @@
   box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
   -webkit-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
   -moz-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
-  transition-duration: 1s;
   cursor: pointer;
 }
 .lien-for-team {
@@ -44,10 +43,10 @@
   background-color: rgb(16, 16, 15);
 }
 .social-icons {
-    display: flex;
-  }
-  .social-icons p {
-    margin: 5px;
-    color: orange;
-    cursor: pointer;
-  }
+  display: flex;
+}
+.social-icons p {
+  margin: 5px;
+  color: orange;
+  cursor: pointer;
+}
