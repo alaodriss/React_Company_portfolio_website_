@@ -5,6 +5,10 @@ import About from "./ components/About/About";
 import Service from "./ components/Service/Service";
 import Testimonial from "./ components/Testimonial/Testimonial";
 import Subscription from "./ components/Subscription/Subscription";
+import Footer from "./ components/Footer/Footer";
+import "./App.css";
+import ScrollToTop from "react-scroll-to-top";
+import Team from "./ components/Team/Team";
 
 const App = () => {
   return (
@@ -13,8 +17,19 @@ const App = () => {
       <Home />
       <About />
       <Service />
+      <Team />
       <Testimonial />
       <Subscription />
+      <Footer />
+      <div>
+        <ScrollToTop
+          smooth
+          height="20"
+          width="20"
+          color="white"
+          style={{ borderRadius: "90px", backgroundColor: "#330032" }}
+        />
+      </div>
     </>
   );
 };

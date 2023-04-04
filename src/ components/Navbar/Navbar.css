@@ -7,6 +7,12 @@
   top: 0;
   text-align: center;
   justify-content: right;
+  position: sticky;
+  z-index: 1;
+}
+/* navbar scrool changed color */
+.navbar-scroll-color {
+  background-color: #720ba9;
 }
 
 .navbar-main ul {
@@ -19,9 +25,14 @@
   margin-right: 50px;
   color: white;
   cursor: pointer;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding-top: 8px;
+  font-weight: 600;
+  font-family: " Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .navbar-main ul li:hover {
+  color: yellow;
+}
+.nav-item .active {
   color: yellow;
 }

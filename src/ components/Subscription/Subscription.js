@@ -6,7 +6,7 @@ import { BsFillSendCheckFill } from "react-icons/bs";
 
 const Subscription = () => {
   return (
-    <div className="containr-fluid subscription">
+    <div id="subscription" className="containr-fluid subscription">
       <div className="container">
         <div className="row">
           <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">

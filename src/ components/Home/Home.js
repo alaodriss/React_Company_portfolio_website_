@@ -4,7 +4,7 @@ import TypeWriterEffect from "react-typewriter-effect";
 
 const Home = () => {
   return (
-    <div className="container-fluid home">
+    <div className="container-fluid home" id="home">
       <div className="container home-content">
         <TypeWriterEffect
           textStyle={{ fontFamily: "Red Hat Display" }}
