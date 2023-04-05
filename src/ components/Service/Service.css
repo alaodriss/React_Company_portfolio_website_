@@ -1,6 +1,12 @@
 .seriver-section {
   height: 900px;
 }
+@media (max-width:1000px) {
+  .seriver-section{
+    height: auto;
+  }
+}
+
 .services {
   margin-top: 100px;
   color: black;

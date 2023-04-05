@@ -66,7 +66,7 @@ const Team = () => {
                 <p>{item.content}</p>
               </div>
               <span className="lien-for-team"></span>
-              <div className="social-icon">
+              <div className="social-icons">
                 <p>
                   <BsFacebook size={30} />
                 </p>

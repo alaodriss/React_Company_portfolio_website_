@@ -18,7 +18,20 @@ const Footer = () => {
                 d'accroitre la vitesse de programmation en évitant de perdre du
                 temps dans le remplissage de celles-ci.
               </p>
-              <span className="social-icons">
+
+              <span className="footer-social-icons">
+                <p>
+                  <BsFacebook size={25} />
+                </p>
+                <p>
+                  <BsInstagram size={25} />
+                </p>
+                <p>
+                  <BsLinkedin size={25} />
+                </p>
+              </span>
+
+              {/* <span className="footer-social-icons">
                 <p>
                   <BsFacebook size={30} />
                 </p>
@@ -28,7 +41,7 @@ const Footer = () => {
                 <p>
                   <BsLinkedin size={30} />
                 </p>
-              </span>
+              </span> */}
             </div>
           </div>
           <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12">

@@ -159,13 +159,12 @@ const Testimonial = () => {
 
           </div>
         ))}
-        
-        {showMore >= data.length ? null : (
+      </div>
+      {showMore >= data.length ? null : (
           <span className="load-more-button" onClick={loadMore}>
             Load More
           </span>
         )}
-      </div>
     </div>
   );
 };
