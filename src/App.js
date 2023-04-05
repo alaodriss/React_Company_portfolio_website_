@@ -11,12 +11,14 @@ import Team from "./ components/Team/Team";
 import Feedback from "./ components/Feedback/Feedback";
 import Video from "./ components/Video/Video";
 import Career from "./ components/Faq/Career";
+import NavbarMobileView from "./ components/Navbar/NavbarMobileView";
 import "./App.css";
 
 const App = () => {
   return (
     <>
       <Navbar />
+      <NavbarMobileView />
       <Home />
       <About />
       <Service />
