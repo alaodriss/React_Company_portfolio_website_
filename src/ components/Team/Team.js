@@ -1,8 +1,9 @@
 import React from "react";
 import "./Team.css";
-import { BsFacebook, BsInstagram,  } from "react-icons/bs";
-import { FaLinkedinIn} from "react-icons/fa";
+import { BsFacebook, BsInstagram } from "react-icons/bs";
+import { FaLinkedinIn } from "react-icons/fa";
 
+import Rotate from "react-reveal/Rotate";
 
 const Team = () => {
   const data = [
@@ -51,34 +52,36 @@ const Team = () => {
   ];
 
   return (
-    <div id='team'className="container team-membres">
+    <div id="team" className="container team-membres">
       <div className="section_title">
         <h5>Team Membres</h5>
         <span className="line"></span>
       </div>
       <div className="row">
         {data.map((item, index) => (
-          <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12" key={index}>
-            <div className="card team-members-item">
-              <img src={item.img} alt="img" />
-              <div className="team-info">
-                <h6>{item.name}</h6>
-                <p>{item.content}</p>
-              </div>
-              <span className="lien-for-team"></span>
-              <div className="social-icons">
-                <p>
-                  <BsFacebook size={30} />
-                </p>
-                <p>
-                  <BsInstagram size={30} />
-                </p>
-                <p>
-                  <FaLinkedinIn size={30} />
-                </p>
+          <Rotate bottom right>
+            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12" key={index}>
+              <div className="card team-members-item">
+                <img src={item.img} alt="img" />
+                <div className="team-info">
+                  <h6>{item.name}</h6>
+                  <p>{item.content}</p>
+                </div>
+                <span className="lien-for-team"></span>
+                <div className="social-icons">
+                  <p>
+                    <BsFacebook size={30} />
+                  </p>
+                  <p>
+                    <BsInstagram size={30} />
+                  </p>
+                  <p>
+                    <FaLinkedinIn size={30} />
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
+          </Rotate>
         ))}
       </div>
     </div>

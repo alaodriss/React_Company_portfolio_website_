@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./Testimonial.css";
+import Fade from "react-reveal/Fade";
+import Bounce from 'react-reveal/Bounce';
 
 const Testimonial = () => {
   const data = [
@@ -146,25 +148,29 @@ const Testimonial = () => {
       </div>
       <div className="row">
         {data.slice(0, showMore).map((item, index) => (
-          <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12" key={index}>
-
-            <div className={index === 1 ? "marked-content-card" : "content-card"}>
-              <img src={item.img} alt="img" />
-              <p>{item.content}</p>
-              <p>
-                <span className="name">{item.name}</span>
-              </p>
-              <p>{item.position}</p>
+          <Fade right>
+            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12" key={index}>
+              <div
+                className={index === 1 ? "marked-content-card" : "content-card"}
+              >
+                <img src={item.img} alt="img" />
+                <p>{item.content}</p>
+                <p>
+                  <span className="name">{item.name}</span>
+                </p>
+                <p>{item.position}</p>
+              </div>
             </div>
-
-          </div>
+          </Fade>
         ))}
       </div>
+      <Bounce left> 
       {showMore >= data.length ? null : (
-          <span className="load-more-button" onClick={loadMore}>
-            Load More
-          </span>
-        )}
+        <span className="load-more-button" onClick={loadMore}>
+          Load More
+        </span>
+      )}
+      </Bounce>
     </div>
   );
 };

@@ -4,16 +4,20 @@ import about from "../../assets/image.jpg";
 import { FcStart } from "react-icons/fc";
 import { FcComboChart } from "react-icons/fc";
 import { FcDribbble } from "react-icons/fc";
+import Fade from 'react-reveal/Fade';
 
 const About = () => {
   return (
     <div id="about" className="container about-section">
       <div className="row">
         <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+          <Fade left>
           <div className="about-image">
             <img src={about} height="400px" width="400px" alt="img" />
           </div>
+          </Fade>
         </div>
+        <Fade right>
         <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
           <div className="about_details">
             <div className="about-title">
@@ -76,6 +80,7 @@ const About = () => {
             </div>
           </div>
         </div>
+        </Fade>
       </div>
     </div>
   );

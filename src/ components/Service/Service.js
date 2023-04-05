@@ -1,7 +1,7 @@
 import React from "react";
 import "./Service.css";
-
 import { FcOk } from "react-icons/fc";
+import Zoom from "react-reveal/Zoom";
 
 const Service = () => {
   const servicedate = [
@@ -64,8 +64,15 @@ const Service = () => {
   ];
 
   const colors = [
-    "#008B8B", "#8B008B", "#BDB76B", "#FF1493", "#B22222", "#FFD700", "#CD5C5C","#FFF0F5"
-  ]
+    "#008B8B",
+    "#8B008B",
+    "#BDB76B",
+    "#FF1493",
+    "#B22222",
+    "#FFD700",
+    "#CD5C5C",
+    "#FFF0F5",
+  ];
 
   return (
     <div id="service" className="container seriver-section">
@@ -75,33 +82,37 @@ const Service = () => {
         <span className="line"></span>
       </div>
       <div className="row">
-        {servicedate.map((item, index ) => (
-          <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12" key={index}>
-            <div className="services">
+        {servicedate.map((item, index) => (
+          <Zoom>
+            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12" key={index}>
+              <div className="services">
+                <span
+                  className="service-number"
+                  style={{ backgroundColor: colors[index] }}
+                >
+                  <p>{item.id}</p>
+                </span>
 
-              <span className="service-number" style={{backgroundColor:colors[index]}}>
-                <p>{item.id}</p>
-              </span>
-
-              <div className="list-of-service">
-                <p>
-                  <FcOk size={20} style={{ margin: "5px" }} /> {item.service1}
-                </p>
-                <span className="service_underline"></span>
-                <p>
-                  <FcOk size={20} style={{ margin: "5px" }} /> {item.service2}
-                </p>
-                <span className="service_underline"></span>
-                <p>
-                  <FcOk size={20} style={{ margin: "5px" }} /> {item.service3}
-                </p>
-                <span className="service_underline"></span>
-                <p>
-                  <FcOk size={20} style={{ margin: "5px" }} /> {item.service4}
-                </p>
+                <div className="list-of-service">
+                  <p>
+                    <FcOk size={20} style={{ margin: "5px" }} /> {item.service1}
+                  </p>
+                  <span className="service_underline"></span>
+                  <p>
+                    <FcOk size={20} style={{ margin: "5px" }} /> {item.service2}
+                  </p>
+                  <span className="service_underline"></span>
+                  <p>
+                    <FcOk size={20} style={{ margin: "5px" }} /> {item.service3}
+                  </p>
+                  <span className="service_underline"></span>
+                  <p>
+                    <FcOk size={20} style={{ margin: "5px" }} /> {item.service4}
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
+          </Zoom>
         ))}
       </div>
     </div>

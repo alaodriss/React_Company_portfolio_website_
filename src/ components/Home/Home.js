@@ -1,10 +1,12 @@
 import React from "react";
 import "./Home.css";
 import TypeWriterEffect from "react-typewriter-effect";
+import Fade from 'react-reveal/Fade';
 
 const Home = () => {
   return (
     <div className="container-fluid home" id="home">
+      <Fade left>
       <div className="container home-content">
         <TypeWriterEffect
           textStyle={{ fontFamily: "Red Hat Display" }}
@@ -28,6 +30,7 @@ const Home = () => {
         </p>
         <span className="view-detalis-home-button">View More</span>
       </div>
+      </Fade>
     </div>
   );
 };
