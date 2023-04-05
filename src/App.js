@@ -6,11 +6,12 @@ import Service from "./ components/Service/Service";
 import Testimonial from "./ components/Testimonial/Testimonial";
 import Subscription from "./ components/Subscription/Subscription";
 import Footer from "./ components/Footer/Footer";
-import "./App.css";
 import ScrollToTop from "react-scroll-to-top";
 import Team from "./ components/Team/Team";
 import Feedback from "./ components/Feedback/Feedback";
 import Video from "./ components/Video/Video";
+import Career from "./ components/Faq/Career";
+import "./App.css";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <Home />
       <About />
       <Service />
+      <Career />
       <Video />
       <Team />
       <Testimonial />
