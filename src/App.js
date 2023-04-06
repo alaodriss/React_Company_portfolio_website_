@@ -28,7 +28,7 @@ const App = () => {
     <>
       <ThemeContext.Provider value={{ theme, handleChnageTheme }}>
         <Navbar />
-        <NavbarMobileView />
+        <NavbarMobileView theme={theme} handleChnageTheme={handleChnageTheme} />
         <Home  theme={theme} handleChnageTheme={handleChnageTheme}/>
 
         <div className="main-theme-compo" id={theme}>
