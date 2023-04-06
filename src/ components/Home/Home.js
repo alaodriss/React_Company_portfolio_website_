@@ -2,10 +2,18 @@ import React from "react";
 import "./Home.css";
 import TypeWriterEffect from "react-typewriter-effect";
 import Fade from 'react-reveal/Fade';
+import { BsFillMoonStarsFill,BsFillSunFill } from "react-icons/bs";
 
-const Home = () => {
+
+
+const Home = ({theme,handleChnageTheme}) => {
   return (
     <div className="container-fluid home" id="home">
+
+
+      <div className="theme-change" onClick={()=> handleChnageTheme()}>
+        {theme === "light" ?(<BsFillMoonStarsFill size={30}/>) : (<BsFillSunFill size={30}/>)}
+      </div>
       <Fade left>
       <div className="container home-content">
         <TypeWriterEffect

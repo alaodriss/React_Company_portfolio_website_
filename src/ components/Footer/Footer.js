@@ -46,7 +46,6 @@ const Footer = () => {
               </span> */}
               </div>
             </div>
-          </Zoom>
           <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12">
             <div className="footer-service">
               <h6 style={{ color: "white", marginTop: "20px" }}>Service</h6>
@@ -73,6 +72,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
+          </Zoom>
         </div>
       </div>
     </div>

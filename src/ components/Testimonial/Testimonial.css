@@ -1,37 +1,51 @@
-.testimonal-section {
+.testimonial-section {
   height: auto;
+}
+#dark .testimonial-section {
+  color: white;
 }
 
 @media (max-width: 1000px) {
-  .testimonal-section {
+  .testimonial-section {
     margin-top: 25px;
   }
-
-  .load-more-button {
-    background-color: #38004c;
-    width: auto;
-    padding: 10px;
-    color: white;
-    text-align: center;
-    display: table;
-    justify-content: center;
-    margin: 35px auto;
-    border-radius: 10px;
-    cursor: pointer;
-  }
-
-  
 }
 
 .content-card {
   margin-top: 50px;
   padding: 10px;
   color: black;
+
   box-shadow: 15px 9px 9px -2px rgba(230, 224, 224, 0.86);
   -webkit-box-shadow: 15px 9px 9px -2px rgba(230, 224, 224, 0.86);
   -moz-box-shadow: 15px 9px 9px -2px rgba(230, 224, 224, 0.86);
   cursor: pointer;
 }
+
+
+#dark .content-card{
+  background-color: #38004c;
+  color: white;
+
+  box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
+  -webkit-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
+  -moz-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
+
+}
+
+#dark .content-card:hover{
+  background-color: #38004c;
+  color: white;
+
+  box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
+  -webkit-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
+  -moz-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
+  border-bottom: 2px solid yellowgreen;
+
+}
+
+
+
 
 .content-card:hover {
   background-color: brown;
@@ -40,42 +54,52 @@
   -webkit-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
   -moz-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
   transition-duration: 1s;
-  cursor: pointer;
 }
-.content-card img {
-  height: 80px;
-  width: 80px;
-  object-fit: cover;
-  border-radius: 90px;
-  margin-top: -30px;
-  border: 3px solid rgb(231, 244, 55);
-}
-.content-card img:hover {
-  border: 3px solid white;
-}
+
 .marked-content-card {
+  background-color: brown;
   padding: 10px;
   color: white;
-  background-color: brown;
   margin-top: 50px;
 }
-.marked-content-card img {
-  height: 80px;
-  width: 80px;
-  object-fit: cover;
-  border-radius: 90px;
-  margin-top: -30px;
-  border: 3px solid rgb(231, 244, 55);
+
+
+#dark .marked-content-card{
+  background-color: #4a0a46;
+  color: white;
+
+  box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
+  -webkit-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
+  -moz-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
+
 }
+
+
 
 .marked-content-card:hover {
   box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
   -webkit-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
   -moz-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
   transition-duration: 1s;
-  cursor: pointer;
 }
 
+.marked-content-card img {
+  height: 80px;
+  width: 80px;
+  border-radius: 90px;
+  object-fit: cover;
+  margin-top: -30px;
+  border: 3px solid rgb(241, 205, 21);
+}
+
+.content-card img {
+  height: 80px;
+  width: 80px;
+  border-radius: 90px;
+  object-fit: cover;
+  margin-top: -30px;
+  border: 3px solid rgb(241, 205, 21);
+}
 .name {
   font-weight: 20px;
   color: orange;
@@ -88,23 +112,28 @@
   padding: 10px;
   color: white;
   text-align: center;
-  display: table;
   justify-content: center;
-  margin: 35px auto;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35px;
   border-radius: 10px;
+  margin-bottom: 20px;
   cursor: pointer;
 }
-
 .load-more-button:hover {
-  background-color: #b072c7;
+  background-color: #df4512;
   width: auto;
   padding: 10px;
   color: white;
   text-align: center;
-  display: table;
   justify-content: center;
-  margin: 35px auto;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35px;
   border-radius: 10px;
+  margin-bottom: 20px;
   cursor: pointer;
   transition-duration: 1s;
 }

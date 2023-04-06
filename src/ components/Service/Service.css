@@ -1,8 +1,9 @@
 .seriver-section {
   height: 900px;
 }
-@media (max-width:1000px) {
-  .seriver-section{
+
+@media (max-width: 1000px) {
+  .seriver-section {
     height: auto;
   }
 }
@@ -17,6 +18,9 @@
   cursor: pointer;
 }
 
+#dark .services {
+  color: white;
+}
 .services:hover {
   box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
   -webkit-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
@@ -39,9 +43,9 @@
   margin-top: -30px;
 }
 .service-number p {
-    text-align: center;
-    vertical-align: middle;
-    line-height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
 }
 
 .section_title h5 {
