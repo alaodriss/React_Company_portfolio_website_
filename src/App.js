@@ -13,6 +13,7 @@ import Video from "./ components/Video/Video";
 import Career from "./ components/Faq/Career";
 import NavbarMobileView from "./ components/Navbar/NavbarMobileView";
 import "./App.css";
+import Contact from "./ components/Contact/Contact.js";
 
 export const ThemeContext = createContext(null);
 
@@ -40,7 +41,7 @@ const App = () => {
           <Testimonial />
           <Feedback />
         </div>
-
+        <Contact />
         <Subscription />
         <Footer />
 
